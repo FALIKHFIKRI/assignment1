@@ -1,0 +1,154 @@
+html, body {
+  background-color: turquoise;
+  background-image: url("/iium-mosque.jpg");
+  font-family: Helvetica, sans-serif;
+  padding-bottom: 100px;
+}
+h1 {
+  text-align: center;
+  background-color: gold;
+}
+div {
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro-content {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.intro-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.intro-content p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#zikirText {
+  display: none;
+}
+
+#zikirText p {
+  margin: 0;
+}
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  padding: 20px;
+}
+
+.images-container img {
+  max-width: 20%; 
+  height: auto;
+}
+
+.scroll-down {
+  padding: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.column{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.panel-body {
+  padding: 15px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-control {
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  box-sizing: border-box;
+}
+.button{
+  background-color: turquoise;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+}
+
+
+p{
+  display: block;
+  margin-top: 0em;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  line-height: 200%;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+

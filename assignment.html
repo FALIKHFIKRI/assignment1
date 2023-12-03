@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assignment.js"></script>
+    <title>RM 1 Campaign</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+
+<body>
+        <div class="container">
+            <div class="image">
+              <img
+                src="https://www.iium.edu.my/v2/wp-content/uploads/2022/06/IIUM-LOGO-AWARD-AUG-2023-1920x282.png"
+                alt="IIUM Logo"
+                width="1920"
+                height="282"
+              />
+            </div>
+          </div>
+
+        <div class="intro-container">
+            <div class="intro-content">
+              <h1>RM1 Campaign</h1>
+              <p>Let your contributions be perpetual for the pleasure of Allah SWT.</p>
+               <p>
+                “The example of those who spend their wealth in the
+                way of Allah is like a seed [of grain] which grows seven
+                spikes; in each spike is a hundred grains. And Allah
+                multiplies [His reward] for whom He wills. And Allah is
+                all-Encompassing and Knowing.”
+                Al Baqarah:261
+                </p>
+            </div>
+
+            <div id="zikirText">
+                <p>Subhanallah</p>
+            </div>
+            
+            <div class="images-container" onclick="onImageClick()">
+                <img src="/pexels-karolina-grabowska-4386287.jpg" alt="Image 1" id="image1" onmouseover="onImageHover('image1')" onmouseout="onImageHover('image1')">
+                <img src="/pexels-liza-summer-6348119.jpg" alt="Image 2" id="image2" onmouseover="onImageHover('image2')" onmouseout="onImageHover('image2')">
+                <img src="/pexels-pixabay-45842.jpg" alt="Image 3" id="image3" onmouseover="onImageHover('image3')" onmouseout="onImageHover('image3')">
+            </div>
+            
+
+            <div class="scroll-down">
+              <span>Scroll down to fill in the form</span>
+            </div>
+        </div>
+
+    <div class="column">
+        <div class="panel">
+            <div class="panel-heading">
+                <h1>Monthly Salary Deduction Form</h1>
+            </div>
+    
+                <div class="panel-body">
+    
+                    <form id="salaryDeductionForm" onsubmit="validateForm(event)">
+                        
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="staffNo">Staff No.:</label>
+                            <input type="text" class="form-control" id="staffNo" name="staffNo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="kcdio">K/C/D/I/O:</label>
+                            <select class="form-control" name="kcdio" required>
+                                <option value="1"> AHMAD IBRAHIM KULLIYYAH OF LAWS </option>
+                                <option value="2"> KULLIYYAH OF ARCHITECTURE AND ENVIRONMENTAL DESIGN </option>
+                                <option value="3"> KULLIYYAH OF EDUCATION </option>
+                                <option value="4"> KULLIYYAH OF ECONOMICS AND MANAGEMENT SCIENCES </option>
+                                <option value="5"> KULLIYYAH OF INFORMATION AND COMMUNICATION TECHNOLOGY </option>
+                                <option value="6"> KULLIYYAH OF ENGINEERING </option>
+                                                            <option value="7"> ABDULHAMID ABUSULAYMAN KULLIYYAH OF ISLAMIC REVEALED KNOWLEDGE AND HUMAN SCIENCES </option>
+                                                            <option value="8"> KULLIYYAH OF ALLIED HEALTH SCIENCES </option>
+                                                            <option value="9"> KULLIYYAH OF MEDICINE </option>
+                                                            <option value="10"> KULLIYYAH OF NURSING </option>
+                                                            <option value="11"> KULLIYYAH OF SCIENCE </option>
+                                                            <option value="12"> KULLIYYAH OF PHARMACY </option>
+                                                            <option value="13"> KULLIYYAH OF DENTISTRY </option>
+                                                            <option value="14"> KULLIYYAH OF LANGUAGES AND MANAGEMENT </option>
+                                                            <option value="15"> CENTRE FOR LANGUAGES AND PRE-UNIVERSITY ACADEMIC DEVELOPMENT </option>
+                                                            <option value="16"> ACADEMIC MANAGEMENT AND ADMISSION DIVISION </option>
+                                                            <option value="19"> COUNSELING &amp; CAREER SERVICES CENTRE </option>
+                                                            <option value="22"> CENTRE FOR POSTGRADUATE STUDIES </option>
+                                                            <option value="23"> CENTRE FOR FOUNDATION STUDIES </option>
+                                                            <option value="24"> MAHALLAH ZUBAIR AL-AWWAM (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="25"> SPORTS DEVELOPMENT CENTRE </option>
+                                                            <option value="26"> ALUMNI RELATIONS DIVISION </option>
+                                                            <option value="27"> DEVELOPMENT DIVISION </option>
+                                                            <option value="28">  RESIDENTIAL AND SERVICES DEPARTMENT </option>
+                                                            <option value="29"> FINANCE DIVISION </option>
+                                                            <option value="30"> IIUM ENDOWMENT FUND </option>
+                                                            <option value="31"> INFORMATION TECHNOLOGY DIVISION </option>
+                                                            <option value="32"> MANAGEMENT SERVICES DIVISION </option>
+                                                            <option value="33"> STUDENT AFFAIRS AND DEVELOPMENT DIVISION </option>
+                                                            <option value="34"> STUDENT SMART LEARNING AND RESEARCH TRAINING UNIT </option>
+                                                            <option value="35"> IIUM Academy of Graduate and Professional Studies (ACADEMY) </option>
+                                                            <option value="36"> NATURAL MEDICINAL PRODUCTS CENTRE (NMPC) </option>
+                                                            <option value="37"> CENTRE FOR ISLAMISATION </option>
+                                                            <option value="38"> IIUM WORLD DEBATE AND ORATORY CENTRE </option>
+                                                            <option value="39"> CENTER FOR MUSLIM WORLD AFFAIRS </option>
+                                                            <option value="40"> OFFICE OF INTERNAL AUDIT </option>
+                                                            <option value="41"> OFFICE OF THE DEPUTY RECTOR (RESPONSIBLE RESEARCH AND INNOVATION) </option>
+                                                            <option value="42"> OFFICE OF THE DEPUTY RECTOR (STUDENT DEVELOPMENT AND COMMUNITY ENGAGEMENT) </option>
+                                                            <option value="43"> OFFICE FOR STRATEGY AND INSTITUTIONAL CHANGE </option>
+                                                            <option value="44"> OFFICE OF INTERNATIONAL AFFAIRS </option>
+                                                            <option value="45"> OFFICE OF THE DEPUTY RECTOR (ACADEMIC AND INTERNATIONALISATION) </option>
+                                                            <option value="46"> OFFICE OF THE RECTOR </option>
+                                                            <option value="47"> OFFICE OF THE CAMPUS DIRECTOR </option>
+                                                            <option value="48"> OFFICE OF THE DEPUTY RECTOR (INTERNATIONALISATION AND GLOBAL NETWORK) </option>
+                                                            <option value="49"> OFFICE OF INDUSTRIAL LINKS </option>
+                                                            <option value="50"> OFFICE OF KNOWLEDGE FOR CHANGE AND ADVANCEMENT  </option>
+                                                            <option value="50"> MAHALLAH ALI IBN ABI TALIB (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="51"> MAHALLAH BILAL IBN RABAH (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="52"> MAHALLAH AL-FARUQ (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="53"> MAHALLAH AS-SIDDIQ (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="54"> MAHALLAH UTHMAN IBN AFFAN (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="55"> MAHALLAH SALAHUDDIN AL-AYYUBI (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="56"> MAHALLAH ASMA' (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="57"> MAHALLAH AMINAH (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="58"> MAHALLAH HAFSAH (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="59"> MAHALLAH HALIMATUS SAADIAH (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="60"> MAHALLAH NUSAIBAH (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="61"> MAHALLAH SUMAYYAH (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="62"> MAHALLAH SAFIYYAH (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="63"> MAHALLAH RUQAYYAH (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="64"> MAHALLAH ASIAH (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="65"> INTERNATIONAL INSTITUTE FOR MUSLIM UNITY </option>
+                                                            <option value="66"> INTERNATIONAL INSTITUTE FOR HALAL RESEARCH AND TRAINING (INHART) </option>
+                                                            <option value="67"> CENTRE FOR COMMUNITY ENGAGEMENT AND SERVICES (CENSERVE) </option>
+                                                            <option value="68"> CENTRE FOR INFORMATION TECHNOLOGY ADVANCEMENT (CITA) </option>
+                                                            <option value="69"> IIUM SEJAHTERA CLINIC </option>
+                                                            <option value="70"> CENTRE FOR PROFESSIONAL DEVELOPMENT (CPD) </option>
+                                                            <option value="71"> CENTRE FOR HUMAN DEVELOPMENT AND APPLIED SOCIAL SCIENCES </option>
+                                                            <option value="72"> CENTRE FOR BUILT ENVIRONMENT </option>
+                                                            <option value="73"> ENTREPRENEURSHIP DEVELOPMENT CENTRE </option>
+                                                            <option value="74"> INTERNATIONAL CENTRE FOR THE ALLIANCE OF CIVILISATIONS </option>
+                                                            <option value="75"> CENTRE FOR CREDITED CO-CURRICULA (CCC) </option>
+                                                            <option value="76"> INTERNATIONAL CENTRE FOR WAQF RESEARCH </option>
+                                                            <option value="78"> INTEGRATED CENTRE FOR RESEARCH ANIMAL CARE AND USE </option>
+                                                            <option value="79"> CENTRE FOR ISLAMIC ECONOMICS  </option>
+                                                            <option value="80"> CENTRE FOR ARTS &amp; CULTURAL SUSTAINABLE DEVELOPMENT </option>
+                                                            <option value="81"> IIUM INSTITUTE OF ISLAMIC BANKING AND FINANCE </option>
+                                                            <option value="82"> INTERNATIONAL INSTITUTE OF ISLAMIC  THOUGHT AND CIVILISATION (ISTAC-IIUM) </option>
+                                                            <option value="83"> RESEARCH MANAGEMENT CENTRE </option>
+                                                            <option value="84"> OCCUPATIONAL SAFETY, HEALTH AND BUILT ENVIRONMENT DEPARTMENT </option>
+                                                            <option value="85"> OFFICE OF THE LEGAL ADVISER </option>
+                                                            <option value="89">  SULTAN HAJI AHMAD SHAH MOSQUE </option>
+                                                            <option value="90"> OFFICE OF SECURITY MANAGEMENT (OSeM) </option>
+                                                            <option value="91"> KESATU IIUM </option>
+                                                            <option value="92"> IIUM MEDICAL CENTRE </option>
+                                                            <option value="93"> DAR AL-HIKMAH LIBRARY  </option>
+                                                            <option value="94"> UNDERGRADUATE AND POSTGRADUATE INTERNATIONAL STUDENT ADMISSION </option>
+                                                            <option value="95"> IIUM ANIMAL CARE AND USE COMMITTEE (I-ACUC) </option>
+                                                            <option value="96"> IIUM RESEARCH ETHICS COMMITTEE </option>
+                                                            <option value="97"> IIUM PRESS </option>
+                                                            <option value="98"> CENTRE FOR UNMANNED TECHNOLOGIES  (CUTe) </option>
+                                                            <option value="99"> DISABILITY SERVICES UNIT </option>
+                                                            <option value="100"> IIUM RETIREERS CLUB (PESUIAM) </option>
+                                                            <option value="101"> SEJAHTERA  CENTRE FOR SUSTAINABILITY AND HUMANITY </option>
+                                                            <option value="102"> PERVASIVE COMPUTING AND BRAIN  DEVELOPMENT  RESEARCH GROUP (PCBDG) </option>
+                                                            <option value="103">  OFFICE OF THE OMBUDSMAN </option>
+                                                            <option value="104"> MAHALLAH MARYAM (RESIDENTIAL COLLEGE) </option>
+                                                            <option value="105"> Perceptive Sentiment Computing </option>
+                                                            <option value="106"> Harun M. Hashim Law Centre </option>
+                                                            <option value="107"> RISK MANAGEMENT OFFICE </option>
+                                                            <option value="108"> Institute of Oceanography &amp; Maritime Studies (INOCEM) </option>
+                                    </select>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="contactNo">Contact No.:</label>
+                            <input type="tel"  class="form-control" id="contactNo" name="contactNo" pattern="[0-9]{3}-[0-9]{7}" placeholder="123-4567890" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email"  class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Amount to be Deducted RM:</label>
+                            <input type="number" class="form-control" id="amount" name="amount" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="startMonth">Deduction Start Month:</label>
+                            <input type="month" class="form-control" id="startMonth" name="startMonth" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="endMonth">Deduction End Month:</label>
+                            <input type="month" class="form-control" id="endMonth" name="endMonth" required>
+                        </div>
+                        <button class="button" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="column">
+        <div class="panel">
+            <div class="panel-heading">
+                <h1>Contacts</h1>
+            </div>
+            <div class="panel-body">
+                <p>IIUM ENDOWMENT FUND <br>
+                    Level 3, Rectory <br>
+                    International Islamic University Malaysia <br>
+                    P.O. Box 10 <br>
+                    50728 Kuala Lumpur <br>
+                    Tel: 03 6196 4268 <br>
+                    Email: ief@iium.edu.my <br>
+                    <a href="https://division.iium.edu.my/ief/" >Website</a> <br>
+                    <a href="https://www.facebook.com/iefofficial">Facebook</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
